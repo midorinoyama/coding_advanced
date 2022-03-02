@@ -4,11 +4,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Casteria</title>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/438fa90fd1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -16,21 +19,21 @@
       <header>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgray;">
           <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="#">Casteria</a>
-            <!--%#navbar-toggler:ナビゲーションアイコンの枠、navbar-toggler-icon:三本戦-->
+            <span class="navbar-brand mb-0 h1">Casteria</span>
+            <!--navbar-toggler:ナビゲーションアイコンの枠、navbar-toggler-icon:三本戦-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <!--メニューで表示させたい要素はcollapseクラスの中に入れる-->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--アイコンに入れたいリストはcollapseクラスの中に入れる-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-link active" aria-current="page">Home</li>
                 <li class="nav-link">Food</li>
                 <li class="nav-link">Drink</li>
                 <li class="nav-link">お問合せ</li>
-              </ul>
+              </ul>   
               <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-light" type="submit">Search</button>
               </form>
             </div>
@@ -38,15 +41,122 @@
         </nav>
       </header>
     
-      <div class="main-visual"></div>
+      <div class="row">
+        <img src="img/food.jpg" class="col-md-6">
+        <img src="img/food2.jpg" class="col-md-6">
+      </div>
+
       <main>
+        <div class="notice">
+          <h2>新型コロナウイルスに対する取り組みの最新情報をご案内</h2>
+          <div class="content">
+            <h2>■衛生面に関して</h2>
+              <ul>
+                <li>マスクを着用しての接客</li>
+                <li>出勤前の検温の徹底</li>
+                <li>レジカウンターやドリンク受け渡し口等への飛沫防止ガードの設置</li>
+                <li>より頻度の高い手洗いの励行</li>
+                <li>テーブルにお客様の消毒用アルコールの設置</li>
+                <li>従業員間の距離確保のため、休憩や研修時の客席利用</li>
+              </ul>
+          </div>
+          <div class="content">
+            <h2>■お客様のへのご協力のお願い</h2>
+              <ul>
+                <li>店内では、飲食時以外のマスクの着用をお願いいたします</li>
+                <li>入店時の手指の消毒にご協力ください</li>
+                <li>レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</li>
+                <li>多数でお越しの際は、お1人がまとめてご注文願います（混雑時に入場制限をする場合がございます）</li>
+                <li>発熱や体調不良の際はご入店をお控えください</li>
+              </ul>
+          </div>
+          <div class="content">
+            <h2>■サービスに関して</h2>
+              <ul>
+                <li>直接お渡しする商品の提供、金銭授受時にグローブの着用</li>
+                <li>ドリンクやフードのサンプリング中止</li>
+                <li>地域活動・イベントの中止</li>
+                <li>混雑時の客席の譲り合いへのご協力お願いの実施</li>
+                <li>店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</li>
+                <li>混雑状況に応じたドライブスルーサービスの一時中止や店内客席利用の制限</li>
+              </ul>
+          </div>
+
+        </div>
+        <div class="row">
+          <h3>Signature Food</h3>
+            <img src="img/food.jpg" class="col-md-5">
+            <div class="text col-md-5">
+              <p>
+                サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。
+                 サーモンの美味しさを引き立てる２種類のソースも絶品です！
+              </p>
+            </div>
+        </div>
+        <div class="row">
+          <h3>Our Coffee</h3>
+          <img src="img/barista.jpg" class="col-md-5">
+          <div class="text col-md-5">
+            <p>
+              当店のコーヒー豆が厳選して世界中から買い付けています。そして、そのコーヒー豆のおいしさを最大限に引き出すために
+              自社のロースタリーで焙煎しています。
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <h3>Our Food</h3>
+          <img src="img/food3.jpg" class="col-md-5">
+          <div class="text col-md-5">
+            <p>
+              当店は何よりまずは衛生管理に気をつけています。「安全・安心」をお届けするために日々継続的な努力を惜しみません。
+            </p>
+          </div>
+        </div>
+        <div class="row">
+
+        </div>
+        <div class="row">
+          <h3>店舗一覧</h3>
+          <div class="col-md-3">
+            <img src="img/restaurant2.jpg" class="rounded-circle" alt="渋谷店の写真" width="200" height="200">
+            <div class="d-flex">  
+        
+              <i class="fas fa-book-open"></i>
+              <i class="fas fa-location-dot"></i>
+              <i class="fas fa-location-pin"></i>
+              <i class="fas fa-globe"></i>
+              <i class=”fas fa-camera-retro”></i>
+              <i class=”far fa-camera-retro”></i>
+              <p>東京都渋谷区xxxxx xxxxx</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="img/restaurant3.jpg" class="rounded-circle" alt="松戸店の写真" width="200" height="200">
+          
+            <p>千葉県松戸市xxxxx xxxxx</p>
+          </div>
+          <div class="col-md-3">
+            <img src="img/restaurant4.jpg" class="rounded-circle" alt="横浜店の写真" width="200" height="200">
+             
+              <p>神奈川県横浜市xxxxx xxxxx</p>
+          </div>
+          <div class="col-md-3">
+            <img src="img/restaurant5.jpg" class="rounded-circle" alt="川越店の写真" width="200" height="200">
+          
+            <p>埼玉県川越市xxxxx xxxxx</p>
+          </div>
+        </div>
       </main>
       <footer>
-        <ul class="footer-menue">
-          <li>プライバシーポリシー</li>
-          <li>お問合せ</li>
-          <li>運営会社</li>
-        </ul>
+        <div class="container-fluid" style="background-color: darkgray;">
+          <div class="row">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">プライバシーポリシー</li>
+                <li class="list-inline-item">お問合せ</li>
+                <li class="list-inline-item">運営会社</li>
+              </ul>
+           </div>
+        </div>
       </footer>
     
 
